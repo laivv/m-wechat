@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                style="@style/layout_contacts_item"
+                android:background="@drawable/border_bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/item0"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        style="@style/layout_contacts_item_text"
+                        android:layout_weight="1"
+                        android:text="零落"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        style="@style/layout_contacts_item_text"
+                        android:textColor="#888888"
+                        android:text="微信号：laiv06"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/setting_myqrcode"
+                    android:layout_gravity="center_vertical|right"
+                    />
+
+            </FrameLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/moneybag"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="钱包"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shoucang"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="收藏"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/photobook"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="相册"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/cardbag"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="卡包"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/biaoqing"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="表情"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:id="@+id/btn_setting"
+                android:clickable="true"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/setting"
+                    android:clickable="false"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+                    android:clickable="false"
+                    android:text="设置"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

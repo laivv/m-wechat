@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="form" type="com.example.lingluo.model.LoginForm" />
+    </data>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:background="@drawable/edit_bg_style"
+        android:ems="10"
+        android:hint="账号"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:text="@={form.userName}" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:height="40dp"
+        android:background="@drawable/edit_bg_style"
+        android:ems="10"
+        android:hint="密码"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="false"
+        android:text="@={form.passWord}" />
+
+
+
+    <!--<Switch-->
+        <!--android:id="@+id/switch1"-->
+        <!--android:layout_width="124dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:checked="@={form.checked}"-->
+        <!--android:text="记住我"-->
+
+        <!--android:textColor="#666666"-->
+        <!--android:textSize="16dp"-->
+        <!--android:layout_weight="0.03" />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:background="#3EB94E"
+        android:elevation="0dp"
+        android:onClick="onClick"
+        android:text="登录"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/btn_login"
+        ></Button>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:textColor="#20a0ff"
+        android:onClick="onClick"
+        android:id="@+id/btn_go_register"
+        />
+
+</LinearLayout>
+</layout>
+

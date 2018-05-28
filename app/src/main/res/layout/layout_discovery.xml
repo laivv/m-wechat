@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/layout_contacts_item"
+                android:background="@drawable/border_bottom"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/friend_show"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+                    android:text="朋友圈"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/scan"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="扫一扫"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shake"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="摇一摇"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/near_people"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="附近的人"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/piaoliuping"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="漂流瓶"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shop"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="购物"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/game"
+                    />
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="游戏"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

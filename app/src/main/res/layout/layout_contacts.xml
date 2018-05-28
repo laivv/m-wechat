@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/layout_contacts_item"
+        android:background="@drawable/border_bottom"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/new_friend"
+            />
+        <TextView
+            style="@style/layout_contacts_item_text"
+            android:text="新的朋友"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/border_bottom"
+        style="@style/layout_contacts_item"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/group_chat"
+            />
+        <TextView
+            style="@style/layout_contacts_item_text"
+
+            android:text="群聊"
+            />
+    </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:background="@drawable/border_bottom"-->
+            <!--style="@style/layout_contacts_item"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/tag"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--style="@style/layout_contacts_item_text"-->
+
+                <!--android:text="标签"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:background="@drawable/border_bottom"-->
+            <!--style="@style/layout_contacts_item"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/public_account"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--style="@style/layout_contacts_item_text"-->
+
+                <!--android:text="公众号"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <com.example.lingluo.view.MyListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conctacts_friend_list"
+            android:divider="@null"
+            >
+
+        </com.example.lingluo.view.MyListView>
+    </LinearLayout>
+
+</ScrollView>
+    <ListView
+        android:divider="@null"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:id="@+id/conctacts_index_items"
+        >
+
+    </ListView>
+</FrameLayout>

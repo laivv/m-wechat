@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.lingluo.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="设置"
+        app:titleLeftBtnIcon="@mipmap/bar_back"
+        android:id="@+id/bar_title_setting"
+        >
+
+    </com.example.lingluo.view.TitleBar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+
+                >
+
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="新消息提醒"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+
+                >
+
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="勿扰模式"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="聊天"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="隐私"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="通用"
+                    />
+            </LinearLayout>
+            <FrameLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+                    android:layout_gravity="center_vertical"
+                    android:text="账号与安全"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/account_lock"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已保护"
+                    android:layout_gravity="right|center_vertical"
+                    android:textColor="#888888"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+                    android:layout_width="wrap_content"
+
+                    android:text="关于微信"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/badge_new"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="帮助与反馈"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+
+        android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+
+                    android:text="实验室"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                style="@style/layout_contacts_item"
+                android:id="@+id/btn_exit_application"
+                android:clickable="true"
+
+                >
+
+                <TextView
+                    style="@style/layout_contacts_item_text"
+                    android:clickable="false"
+                    android:text="退出"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

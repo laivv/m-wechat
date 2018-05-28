@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.example.lingluo.view.TitleBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:titleText="标题"
+    app:titleLeftBtnIcon="@mipmap/bar_back"
+    app:titleRightBtnIcon="@mipmap/chat_item_people"
+    android:id="@+id/title_bar_1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    </com.example.lingluo.view.TitleBar>
+
+
+
